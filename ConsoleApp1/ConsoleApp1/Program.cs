@@ -44,6 +44,9 @@ namespace ConsoleApp1
                 case "9":
                     Programme1.studentPassFail();
                     break;
+                case "10":
+                    Programme1.studentGradesPerSubject();
+                    break;
                 default:
                     Console.WriteLine("Invalid choice. Please choose a correct option.");
                     break;

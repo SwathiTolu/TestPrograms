@@ -176,5 +176,40 @@ namespace ConsoleApp1
 
         }
 
+        public static void studentGradesPerSubject()
+        {
+            //10. program for student grades when subject marks are given
+            int[] myArray = new int[6] { 64, 55, 33, 44, 65, 66 };
+
+            bool StudentPassed = true;
+            for (int i = 0; i < 6; i++)
+            {
+                int subjectMark = myArray[i];
+
+
+                if (subjectMark > 35)
+                {
+                    StudentPassed = true;
+
+                }
+                else
+                {
+                    StudentPassed = false;
+                    break;
+                }
+            }
+
+            if (StudentPassed)
+            {
+                Console.WriteLine("Student Passed");
+            }
+            else
+            {
+                Console.WriteLine("Student Failed");
+            }
+
+            Console.ReadLine();
+        }
+
     }
 }
