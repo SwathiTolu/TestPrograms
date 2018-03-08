@@ -95,12 +95,12 @@ namespace ConsoleApp1
 
         public static void multiplyArrays()
         {
-            //7. program to multiply corresponding elements of two arrays of integers
+            //program to multiply corresponding elements of two arrays of integers
             //to do
         }
         public static void highLow()
         {
-            //8. program to find the largest and lowest values from three integer values
+            //7. program to find the largest and lowest values from three integer values
             Console.WriteLine("Enter 1st number: ");
             int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter 2nd number: ");
@@ -116,7 +116,7 @@ namespace ConsoleApp1
 
         public static void oddPossition()
         {
-            //9. program to create a new string of every other character (odd position) from the first position of a given string
+            //8. program to create a new string of every other character (odd position) from the first position of a given string
             Console.Write("Type something here : ");
             string name = Console.ReadLine();
             var result = string.Empty;
@@ -129,8 +129,51 @@ namespace ConsoleApp1
         }
         public static void sumArrrayIntegers()
         {
-            //10. program to compute the sum of all the elements of an array of integers.
+            //program to compute the sum of all the elements of an array of integers.
             // dont know
+        }
+
+        public static void studentPassFail()
+        {
+            //program to compute student grades.
+            int x = input();
+            if (x >= 1 && x <= 100)
+            {
+                if (x > 35)
+                {
+                    Console.WriteLine("Student is PASS");
+                    if (x > 60)
+                    {
+                        Console.WriteLine("Student got FIRST CLASS");
+                    }
+                    else if (x > 50 && x < 60)
+                    {
+                        Console.WriteLine("Student got SECOND CLASS");
+                    }
+                    else
+                        Console.WriteLine("Student got THIRD CLASS");
+                }
+                else
+                {
+                    Console.WriteLine("Student is FAIL");
+                }
+
+
+            }
+            //Console.WriteLine("Enter the number ranges between 1 to 100");
+
+            Console.ReadLine();
+        }
+        static int input()
+        {
+            Console.WriteLine("Enter Integer: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            if (x < 1 || x > 100)
+            {
+                input();
+            }
+            return x;
+
         }
 
     }
