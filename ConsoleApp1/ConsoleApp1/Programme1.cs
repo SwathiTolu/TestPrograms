@@ -155,13 +155,27 @@ namespace ConsoleApp1
         }
         public static void sumArrrayIntegers()
         {
-            //program to compute the sum of all the elements of an array of integers.
-            // dont know
+            //10. program to compute the sum of all the elements of an array of integers.
+            int[] array = new int[10];
+            Console.WriteLine("Enter values of the array declared: ");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.ReadLine();
+            var result = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                result = result + array[i];
+            }
+            Console.WriteLine("The sum all values in the array = {0}", result);
+            Console.ReadKey();
+
         }
 
         public static void studentPassFail()
         {
-            //10.program to compute student grades.
+            //11.program to compute student grades.
             int x = input();
             if (x >= 1 && x <= 100)
             {
@@ -204,7 +218,7 @@ namespace ConsoleApp1
 
         public static void studentGradesPerSubject()
         {
-            //11. program for student grades when subject marks are given
+            //12. program for student grades when subject marks are given
             int[] myArray = new int[6] { 64, 55, 33, 44, 65, 66 };
 
             bool StudentPassed = true;
