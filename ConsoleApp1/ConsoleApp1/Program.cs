@@ -36,15 +36,18 @@ namespace ConsoleApp1
                     Programme1.sumOfInteger();
                     break;
                 case "7":
-                    Programme1.highLow();
+                    Programme1.multiplyArrays();
                     break;
                 case "8":
-                    Programme1.oddPossition();
+                    Programme1.highLow();
                     break;
                 case "9":
-                    Programme1.studentPassFail();
+                    Programme1.oddPossition();
                     break;
                 case "10":
+                    Programme1.studentPassFail();
+                    break;
+                case "11":
                     Programme1.studentGradesPerSubject();
                     break;
                 default:

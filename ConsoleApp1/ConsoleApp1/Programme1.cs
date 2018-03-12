@@ -95,12 +95,38 @@ namespace ConsoleApp1
 
         public static void multiplyArrays()
         {
-            //program to multiply corresponding elements of two arrays of integers
-            //to do
+            //7. program to multiply corresponding elements of two arrays of integers
+            int[] array1 = new int[4];
+
+            int[] array2 = new int[4];
+
+            Console.WriteLine("Enter values in Array 1 = ");
+            for (int i = 0; i < array1.Length; i++)
+            {
+                array1[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("Enter values in Array 2 = ");
+            for (int i = 0; i < array2.Length; i++)
+            {
+                array2[i] = Convert.ToInt32(Console.ReadLine());
+
+            }
+
+            int[] array3 = new int[4];
+            Console.Write("The values of new array are = { ");
+            for (int i = 0; i < array1.Length; i++)
+            {
+                array3[i] = array1[i] * array2[i];
+                Console.Write("{0} ", array3[i]);
+            }
+            Console.Write("}");
+
+            Console.ReadKey();
         }
         public static void highLow()
         {
-            //7. program to find the largest and lowest values from three integer values
+            //8. program to find the largest and lowest values from three integer values
             Console.WriteLine("Enter 1st number: ");
             int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter 2nd number: ");
@@ -116,7 +142,7 @@ namespace ConsoleApp1
 
         public static void oddPossition()
         {
-            //8. program to create a new string of every other character (odd position) from the first position of a given string
+            //9. program to create a new string of every other character (odd position) from the first position of a given string
             Console.Write("Type something here : ");
             string name = Console.ReadLine();
             var result = string.Empty;
@@ -135,7 +161,7 @@ namespace ConsoleApp1
 
         public static void studentPassFail()
         {
-            //program to compute student grades.
+            //10.program to compute student grades.
             int x = input();
             if (x >= 1 && x <= 100)
             {
@@ -178,7 +204,7 @@ namespace ConsoleApp1
 
         public static void studentGradesPerSubject()
         {
-            //10. program for student grades when subject marks are given
+            //11. program for student grades when subject marks are given
             int[] myArray = new int[6] { 64, 55, 33, 44, 65, 66 };
 
             bool StudentPassed = true;
