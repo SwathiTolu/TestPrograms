@@ -53,6 +53,9 @@ namespace ConsoleApp1
                 case "12":
                     Programme1.studentGradesPerSubject();
                     break;
+                case "13":
+                    Programme1.arrayHasOddNumber();
+                    break;
                 default:
                     Console.WriteLine("Invalid choice. Please choose a correct option.");
                     break;
